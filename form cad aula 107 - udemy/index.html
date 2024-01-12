@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cadastro</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/style.css"></head>
+<body>
+    <section class="container">
+        <h1>Formulário de cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+
+        <form action="/" method="POST" class="form">
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" class="name valid" placeholder="Digite seu usuário">
+
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" class="surname valid" placeholder="Digite seu sobrenome">
+
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" class="cpf valid" placeholder="Digite seu CPF">
+
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" class="password valid" placeholder="Digite sua senha">
+
+            <label for="senha">Repetir senha</label>
+            <input type="password" name="senha" class="repeat-password valid" placeholder="Digite novamente sua senha">
+            
+            <button type="submit" id="btn-send">ENVIAR</button>
+    </section>
+
+    <script src= ".assets/js/validate_cpf.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
